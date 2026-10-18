@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b111a">
+  <meta name="description" content="A personal TV player with Malaysian channel playlists, favorites, and M3U import.">
+  <title>My TV Player</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="player.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">▶</span> My TV Player</a><span id="library-label">TV channels</span></header>
+    <main class="layout">
+      <section class="watch" aria-labelledby="now-title">
+        <div class="watch-heading"><div><div class="eyebrow"><span class="live-dot" aria-hidden="true"></span><span id="play-state">READY</span></div><h1 id="now-title">Choose a channel</h1></div><button id="fullscreen" class="small-button" type="button">⛶ Fullscreen</button></div>
+        <div id="player-frame" class="player-frame">
+          <div id="video-slot"></div>
+          <div id="player-message" class="player-message"><span class="screen-mark" aria-hidden="true">▶</span><p id="screen-status">Loading your channels…</p><button id="retry" type="button" class="small-button" hidden>Retry channel</button></div>
+        </div>
+        <div class="tv-controls">
+          <button id="previous" class="small-button" type="button" aria-label="Previous channel">‹ Channel</button>
+          <button id="next" class="small-button" type="button" aria-label="Next channel">Channel ›</button>
+          <button id="mute" class="small-button" type="button">Turn sound on</button>
+          <button id="check-video" class="small-button" type="button">Check video · 10s</button>
+          <label class="source-picker"><span class="sr-only">Playback source</span><select id="source-select" aria-label="Playback source"></select></label>
+        </div>
+        <p id="status" class="playback-status" role="status">Loading playlist…</p>
+        <p id="verification" class="library-status" role="status">No video check has been run in this browser.</p>
+        <p class="playback-note">Starts muted. Channel availability depends on the stream provider. TV only. Some channels need provider integration before they can play here.</p>
+        <section class="library-panel" aria-label="Manage playlists">
+          <div class="library-actions"><button id="refresh" class="small-button" type="button">↻ Refresh sources</button><button id="export" class="small-button" type="button">↓ Export M3U</button><button id="reset" class="small-button" type="button">Malaysia list</button></div>
+          <p id="library-status" role="status" class="library-status"></p>
+          <details class="add-panel"><summary>+ Import a playlist or add a stream</summary>
+            <form id="import-form">
+              <label>HTTPS playlist URL<input id="playlist-url" type="url" placeholder="https://example.com/channels.m3u"></label>
+              <label>Or choose an M3U file<input id="playlist-file" type="file" accept=".m3u,.m3u8,text/plain,application/x-mpegurl,audio/x-mpegurl"></label>
+              <label>Or paste a playlist / stream URL<textarea id="playlist-text" rows="4" placeholder="#EXTM3U or https://example.com/live.m3u8"></textarea></label>
+              <label>Import mode<select id="import-mode"><option value="merge">Add to my channels</option><option value="replace">Replace my channels</option></select></label>
+              <button id="import-submit" type="submit">Import and play</button><p id="form-error" class="form-error" role="alert" hidden></p>
+            </form><p class="add-help">Use one input above. Imports stay in this browser. A single stream can be HLS or DASH; playlist imports keep all channel entries and alternate sources.</p>
+          </details>
+        </section>
+      </section>
+      <aside class="sidebar" aria-labelledby="channels-title">
+        <div class="sidebar-header"><div><div class="eyebrow">CHANNELS</div><h2 id="channels-title">Live television</h2></div><span id="channel-count"></span></div>
+        <label class="search-wrap"><span class="sr-only">Search channels</span><input id="search" type="search" placeholder="Search channels" autocomplete="off"></label>
+        <div class="list-filters"><label><span class="sr-only">Channel group</span><select id="group-filter"><option value="">All groups</option></select></label><button id="favorites-filter" class="small-button" type="button" aria-pressed="false">★ Favorites</button></div>
+        <div id="channels" class="channel-list" role="list"></div><p id="empty" class="empty" hidden>No matching channels.</p>
+      </aside>
+    </main>
+    <footer>Sources: <a href="https://github.com/iptv-org/iptv/blob/master/streams/my.m3u" target="_blank" rel="noopener noreferrer">iptv-org</a>; TV Malaysia catalogue; see README.txt for source details. A listed source has not necessarily passed a playback check. Favorites and imported lists stay on this device.</footer>
+  </div>
+  <script src="playlist.js" defer></script>
+  <script src="catalog.js" defer></script>
+  <script src="playback-check.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

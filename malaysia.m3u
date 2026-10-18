@@ -1,0 +1,84 @@
+#EXTM3U
+# Public free-to-air candidates; see README.txt for source references. Snapshot 2026-10-19; TV Malaysia catalogue plus public TV candidates.
+# Presence is not a successful playback check. Some RTM entries require provider headers.
+#EXTINF:-1 tvg-id="8TV.my" group-title="Malaysia",8TV
+https://tonton-live-switch-ssar.akamaized.net/stream-8tv/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
+#EXTINF:-1 tvg-id="NTV7.my" group-title="Malaysia",NTV7
+https://tonton-live-switch-ssar.akamaized.net/stream-ntv7/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
+#EXTINF:-1 tvg-id="TV9.my" group-title="Malaysia",TV9
+https://tonton-live-switch-ssar.akamaized.net/stream-tv9/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
+#EXTINF:-1 tvg-id="AwesomeTV.my" group-title="Malaysia",Awesome TV
+https://488b9e074624.ap-south-1.playback.live-video.net/api/video/v1/ap-south-1.533267421985.channel.B7bB1wHJRCnw.m3u8
+#EXTINF:-1 tvg-id="MaahTV.my" group-title="Malaysia",Maah TV
+https://hls.maahtv.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="RTMASEAN.my" group-title="Malaysia",RTM ASEAN
+https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/chunklist_b2596000_slENG.m3u8
+#EXTINF:-1 tvg-id="TV1.my" group-title="Malaysia",TV1
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/manifest.mpd
+#EXTINF:-1 tvg-id="TV1.my" group-title="Malaysia",TV1
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/playlist.m3u8?id=1
+#EXTINF:-1 tvg-id="SukanRTM.my" group-title="Malaysia",Sukan RTM
+https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
+#EXTINF:-1 tvg-id="BeritaRTM.my" group-title="Malaysia",Berita RTM
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:berita/playlist.m3u8?id=5
+#EXTINF:-1 tvg-id="Okey.my" group-title="Malaysia",TV Okey
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3
+#EXTINF:-1 tvg-id="TV6.my" group-title="Malaysia",TV6
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6
+#EXTINF:-1 tvg-id="RTMParlimenDewanNegara.my" group-title="Malaysia",Dewan Negara
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8
+#EXTINF:-1 tvg-id="RTMParlimenDewanRakyat.my" group-title="Malaysia",Dewan Rakyat
+#EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
+https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7
+# TV/video entries from the supplied TV Malaysia catalogue. Radio is excluded.
+#EXTINF:-1 tvg-id="TV1.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/tv1.png" x-provider="RTM Klik",TV1
+https://rtmklik.rtm.gov.my/live/tv/tv1
+#EXTINF:-1 tvg-id="TV2.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/tv2.png" x-provider="RTM Klik",TV2
+https://rtmklik.rtm.gov.my/live/tv/tv2
+#EXTINF:-1 tvg-id="Okey.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/okey.png" x-provider="RTM Klik",Okey
+https://rtmklik.rtm.gov.my/live/tv/okey
+#EXTINF:-1 tvg-id="TVS.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/tvs.png" x-provider="TVS",TVS
+https://www.tvsinspire.my/en/watch/tvs
+#EXTINF:-1 tvg-id="AstroAwani.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/awani.png",Astro Awani
+https://d2idp3hzkhjpih.cloudfront.net/out/v1/4b85d9c2bf97413eb0c9fd875599b837/index.m3u8
+#EXTINF:-1 tvg-id="BeritaRTM.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/beritartm.png" x-provider="RTM Klik",Berita RTM
+https://rtmklik.rtm.gov.my/live/tv/berita
+#EXTINF:-1 tvg-id="BernamaTV.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/bernama.png" x-provider="Mana2",Bernama
+https://www.mana2.my/channel/bernama
+#EXTINF:-1 tvg-id="SukanRTM.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/sukanrtm2.png" x-provider="RTM Klik",Sukan +
+https://rtmklik.rtm.gov.my/live/tv/sukan
+#EXTINF:-1 tvg-id="TVAlHijrah.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/alhijrah.png" x-provider="Mana2",Al-Hijrah
+https://www.mana2.my/channel/live/tv-alhijrah
+#EXTINF:-1 tvg-id="TVIKIM.my" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/tvikim.png",TV IKIM
+https://d2erojrnrpvv8s.cloudfront.net/assets/aa58725e-f889-476c-a4fc-bb78a98fbe84/hls/master.m3u8
+#EXTINF:-1 tvg-id="jr.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/jr.png",Jr.
+https://d1sq2slp9afh7o.cloudfront.net/smil:jr/playlist.m3u8?id=24104
+#EXTINF:-1 tvg-id="apetito.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/apetito.png",Apetito
+https://d1sq2slp9afh7o.cloudfront.net/smil:apetito/playlist.m3u8?id=24100
+#EXTINF:-1 tvg-id="roll.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/roll.png",Roll
+https://d1sq2slp9afh7o.cloudfront.net/smil:roll/playlist.m3u8?id=24095
+#EXTINF:-1 tvg-id="snap.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/snap.png",Snap
+https://d1sq2slp9afh7o.cloudfront.net/smil:snap/playlist.m3u8?id=24099
+#EXTINF:-1 tvg-id="aura.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/aurartm.png",Aura
+https://d1sq2slp9afh7o.cloudfront.net/smil:aura/playlist.m3u8?id=24102
+#EXTINF:-1 tvg-id="fitrah.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/fitrah.png",Fitrah (Aura feed)
+https://d1sq2slp9afh7o.cloudfront.net/smil:aura/playlist.m3u8?id=24102
+#EXTINF:-1 tvg-id="free_movie.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/movienow.png" x-provider="Mana2",Free Movie
+https://www.mana2.my/channel/free-movies
+#EXTINF:-1 tvg-id="CNA.sg" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/cna.png",CNA
+https://www.youtube.com/watch?v=XWq5kBlakcQ
+#EXTINF:-1 tvg-id="siara_tv.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/siaratv.png" x-provider="Mana2",SiaraTV
+https://www.mana2.my/channel/siara-tv
+#EXTINF:-1 tvg-id="rcti.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/rcti.png" x-provider="RCTI+",RCTI
+https://www.rctiplus.com/tv/rcti
+#EXTINF:-1 tvg-id="mnctv.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/mnctv.png" x-provider="RCTI+",MNCTV
+https://www.rctiplus.com/tv/mnctv
+#EXTINF:-1 tvg-id="gtv.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/gtv.png" x-provider="RCTI+",GTV
+https://www.rctiplus.com/tv/gtv
+#EXTINF:-1 tvg-id="spongebob.tv" group-title="TV" tvg-logo="https://cdn.tvmalaysia.app/v2/channels/spongebob.png",Spongebob
+https://www.youtube.com/watch?v=SkjgMm6xRbg
